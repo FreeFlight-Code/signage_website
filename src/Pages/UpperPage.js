@@ -18,10 +18,11 @@ class UpperPage extends Component {
 
     render() {
         let location = window.location.pathname.replace(/[^a-zA-Z]+/g, '');
+        let upstairsTV = (function(){if(location!=="lower"){return true}})();
         const isRotated = (()=>{
-            if (location === 'lower'){
+            if (!upstairsTV){
                 return {
-                    transform: "rotate(90deg) translateY(-10vh)"
+                    transform: "rotate(90deg)"
                 }
             } else return null
         })()
@@ -62,21 +63,15 @@ class UpperPage extends Component {
                 <span className='blackburn'>Blackburn Building II</span>
                 <div className='gsemLogo'></div>
             </div>
-            <div className='q1' style={location === 'upper' ? this.imageMap.upper : this.imageMap.lower }>
+            <div className='q1' style={upstairsTV ? this.imageMap.upper : this.imageMap.lower }>
                 
             </div>
             <div className='q2'>
-                {location === 'upper' ? upperSuites() :lowerSuites()}
-            </div>
-            <div className='q3' style={location === 'upper' ? this.imageMap.lower : this.imageMap.upper }>
-                <h6 className='location'>{location === 'upper' ? 'Downstairs' : 'Upstairs'}</h6>
-            </div>
-            <div className='q4'>
-                {location === 'upper' ? lowerSuites() : upperSuites()}
+                <h6>THIS LEVEL</h6>
+                {upstairsTV ? upperSuites() :lowerSuites()}
+                <h6>{upstairsTV ? 'DOWNSTAIRS' : 'UPSTAIRS'}</h6>
+                {upstairsTV ? lowerSuites() : upperSuites()}
 
-            </div>
-            <div className='q5'>
-                
             </div>
         </div>
         <div className='advertisementSide' style={isRotated} >

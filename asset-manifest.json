@@ -1,13 +1,13 @@
 {
-  "main.css": "/signage_website/static/css/main.ebcbe8fa.chunk.css",
-  "main.js": "/signage_website/static/js/main.06b5d673.chunk.js",
-  "main.js.map": "/signage_website/static/js/main.06b5d673.chunk.js.map",
+  "main.css": "/signage_website/static/css/main.2c01a309.chunk.css",
+  "main.js": "/signage_website/static/js/main.f7fbb18a.chunk.js",
+  "main.js.map": "/signage_website/static/js/main.f7fbb18a.chunk.js.map",
   "runtime~main.js": "/signage_website/static/js/runtime~main.b2bd9248.js",
   "runtime~main.js.map": "/signage_website/static/js/runtime~main.b2bd9248.js.map",
   "static/js/2.b91bfe70.chunk.js": "/signage_website/static/js/2.b91bfe70.chunk.js",
   "static/js/2.b91bfe70.chunk.js.map": "/signage_website/static/js/2.b91bfe70.chunk.js.map",
   "index.html": "/signage_website/index.html",
-  "precache-manifest.a9ee3158098f610cf5a72e68893c40a5.js": "/signage_website/precache-manifest.a9ee3158098f610cf5a72e68893c40a5.js",
+  "precache-manifest.1df9600add883836f0282910187aa8fc.js": "/signage_website/precache-manifest.1df9600add883836f0282910187aa8fc.js",
   "service-worker.js": "/signage_website/service-worker.js",
-  "static/css/main.ebcbe8fa.chunk.css.map": "/signage_website/static/css/main.ebcbe8fa.chunk.css.map"
+  "static/css/main.2c01a309.chunk.css.map": "/signage_website/static/css/main.2c01a309.chunk.css.map"
 }

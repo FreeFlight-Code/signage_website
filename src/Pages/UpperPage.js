@@ -8,7 +8,23 @@ const lower = suiteData.lower;
 
 
 class UpperPage extends Component {
+
+    imageMap = {
+        upper: {backgroundImage: "url(https://www.frontrange.edu/images/default-source/default-album/campus-maps/lc-redcloud-peak.jpg?sfvrsn=2b9704a7_10)"},
+        lower: {backgroundImage: "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLsehmf34QmCGXmA6wzbByzduV1PIvCR5pB-MGkAY3weifwXU)"}
+    }
+    
+
+
     render() {
+        let location = window.location.pathname.replace(/[^a-zA-Z]+/g, '');
+        const isRotated = (()=>{
+            if (location === 'lower'){
+                return {
+                    transform: "rotate(90deg) translateY(-10vh)"
+                }
+            } else return null
+        })()
         const upperSuites = ()=>{
             if (upper.length){
                 return (upper.map((el, i)=>{
@@ -41,37 +57,39 @@ class UpperPage extends Component {
         }
     return (
       <div className="UpperPageContainer">
-        <div className='mapSide'>
+        <div className='mapSide' style={isRotated}>
             <div className='headerBar'>
                 <span className='blackburn'>Blackburn Building II</span>
-                <img source='https://gsemtechnologies.com/wp-content/uploads/2018/01/GSEMLOGO-1.png' className='gsemLogo'></img>
+                <div className='gsemLogo'></div>
             </div>
-            <div className='q1'>
+            <div className='q1' style={location === 'upper' ? this.imageMap.upper : this.imageMap.lower }>
                 
             </div>
             <div className='q2'>
-                {upperSuites()}
+                {location === 'upper' ? upperSuites() :lowerSuites()}
             </div>
-            <div className='q3'>
-
+            <div className='q3' style={location === 'upper' ? this.imageMap.lower : this.imageMap.upper }>
+                <h6 className='location'>{location === 'upper' ? 'Downstairs' : 'Upstairs'}</h6>
             </div>
             <div className='q4'>
-                {lowerSuites()}
+                {location === 'upper' ? lowerSuites() : upperSuites()}
 
             </div>
             <div className='q5'>
-                info_
+                
             </div>
         </div>
-        <div className='advertisementSide'>
+        <div className='advertisementSide' style={isRotated} >
             <iframe
                 id='advertisement_upper_screen'
                 title='advertisement_upper_screen'
-                src={`https://www.youtube.com/embed/${videoData[0]}`}
+                // src={`https://www.youtube.com/embed/${videoData[0]}`}
+                src={`https://simustream.com/watch/gsem_technologies/${videoData[0]}`}
                 frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen>
             </iframe>
+            <div>Advertise here contact Suite 505</div>
         </div>
       </div>
     );

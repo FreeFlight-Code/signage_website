@@ -1,55 +1,62 @@
 .UpperPageContainer{
+    position: relative;
     font-family: fantasy;
-    /* font-weight: 400; */
     color: white;
     display: grid;
+    align-items: center;
     grid-template-columns: 50% 50%;
     background-image: url('https://www.abercrombiekent.com/-/media/ak/media-for-prod/journeys/tailor-made/north-america-us-tailor-made-national-parks-zion-to-the-grand-canyon-mh/tm-utah-national-parks-mh.jpg?h=500&w=1224&la=en&hash=DA63B0009D1B1598C48807A13DD699D14C343FB9');
-    background-size: contain;
+    background-color: rgb(51, 0, 0);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     max-height: 100vh;
 }
 .mapSide, .advertisementSide{
+    position: relative;
     padding: 3vh;
-    background-color: rgb(73, 73, 73);
     box-sizing: border-box;
-    /* transform: rotate(270deg); */
 }
 .mapSide{
+    font-size: 90px;
     grid-column: 1 / 2;
-    font-size: 200px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows:  10vh 45%;
     grid-gap: 1em;
 }
+.blackburn{
+    color: black;
+    text-shadow: 12px 2px 30px rgb(252, 211, 211);
+}
 .headerBar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: .23em;
     grid-column: 1 / -1;
     border-bottom: 5px solid black;
 }
 .gsemLogo{
     height: 10vh;
-    width: 39%;
+    width: 29%;
+    opacity: .5;
     background-image: url(https://gsemtechnologies.com/wp-content/uploads/2018/01/GSEMLOGO-1.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 .suite{
+    font-size: 2.2rem;
     display: flex;
     justify-content: space-between;
     background-color: rgb(22, 22, 22);
     padding: .4em 1em; 
-    font-size: 90px;
     margin-bottom: .5em;
     border: .1em white outset;
     border-radius: .5em;
 }
 .q4 .suite{
-    padding: .4em 1em; 
+    padding: .3em 1em; 
 }
 .q1{
     grid-column: 1 / 6;
@@ -61,10 +68,17 @@
     grid-column: 6 / -1;
 }
 .q3{
+    position: relative;
     grid-column: span 4;
-    background-image: url('https://www.frontrange.edu/images/default-source/default-album/campus-maps/lc-redcloud-peak.jpg?sfvrsn=2b9704a7_10');
     background-repeat: no-repeat;
     background-size: contain;
+}
+.location{
+    padding: 0;
+    margin: 0;
+    color: white;
+    position: absolute;
+    top: -3vh;
 }
 .q4{
     grid-column: span 4;
@@ -72,9 +86,13 @@
 .q5{
     grid-column: span 2;
 }
+.advertisementSide div{
+    font-size: 3em;
+}
 
 iframe{
     box-shadow: 20px 10px 200px rgb(161, 161, 161), 10px 10px 20px black; 
     width: 100%;
-    height: 100%;
+    height: 50vh;
+
 }

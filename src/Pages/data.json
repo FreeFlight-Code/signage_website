@@ -2,11 +2,7 @@
     "upper":
         [
             {
-                "suite": 505,
-                "name": "GSEM Technologies"
-            },
-            {
-                "suite": 503,
+                "suite": 501,
                 "name": "GSEM Technologies"
             },
             {
@@ -14,47 +10,51 @@
                 "name": "GSEM Technologies"
             },
             {
-                "suite": 501,
+                "suite": 503,
                 "name": "GSEM Technologies"
             },
             {
-                "suite": 509,
+                "suite": 504,
                 "name": "GSEM Technologies"
             },
             {
-                "suite": 509,
+                "suite": 505,
                 "name": "GSEM Technologies"
             },
             {
                 "suite": 506,
+                "name": "GSEM Technologies"
+            },
+            {
+                "suite": 507,
                 "name": "Test Suite"
             }
         ],
     "lower":
         [
             {
-                "suite": 405,
-                "name": "GSEM Technologies"
-            },
-            {
-                "suite": 403,
-                "name": "GSEM Technologies"
+                "suite": 401,
+                "name": "Accepting Applications"
             },
             {
                 "suite": 402,
-                "name": "GSEM Technologies"
+                "name": "Accepting Applications"
             },
             {
-                "suite": 401,
-                "name": "GSEM Technologies"
+                "suite": 403,
+                "name": "Accepting Applications"
             },
             {
-                "suite": 409,
-                "name": "GSEM Technologies"
+                "suite": 404,
+                "name": "Accepting Applications"
+            },
+            {
+                "suite": 405,
+                "name": "Accepting Applications"
             },
             {
                 "suite": 406,
-                "name": "Test Suite"
+                "name": "Accepting Applications"
             }
         ]
 }

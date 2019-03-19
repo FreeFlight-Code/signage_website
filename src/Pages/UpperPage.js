@@ -10,7 +10,7 @@ const lower = suiteData.lower;
 class UpperPage extends Component {
 
     imageMap = {
-        upper: {backgroundImage: "url(https://www.frontrange.edu/images/default-source/default-album/campus-maps/lc-redcloud-peak.jpg?sfvrsn=2b9704a7_10)"},
+        upper: {backgroundImage: "url(https://2016.minneapolis.wordcamp.org/files/2016/05/venue-map.png)"},
         lower: {backgroundImage: "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLsehmf34QmCGXmA6wzbByzduV1PIvCR5pB-MGkAY3weifwXU)"}
     }
     

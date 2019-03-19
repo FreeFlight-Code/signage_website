@@ -62,7 +62,6 @@
 .q1{
     grid-column: 1;
     grid-row: 2;
-    background-image: url('https://www.frontrange.edu/images/default-source/default-album/campus-maps/lc-redcloud-peak.jpg?sfvrsn=2b9704a7_10');
     background-repeat: no-repeat;
     background-size: contain;
 }

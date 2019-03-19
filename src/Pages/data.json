@@ -1,0 +1,60 @@
+{
+    "upper":
+        [
+            {
+                "suite": 505,
+                "name": "GSEM Technologies"
+            },
+            {
+                "suite": 503,
+                "name": "GSEM Technologies"
+            },
+            {
+                "suite": 502,
+                "name": "GSEM Technologies"
+            },
+            {
+                "suite": 501,
+                "name": "GSEM Technologies"
+            },
+            {
+                "suite": 509,
+                "name": "GSEM Technologies"
+            },
+            {
+                "suite": 509,
+                "name": "GSEM Technologies"
+            },
+            {
+                "suite": 506,
+                "name": "Test Suite"
+            }
+        ],
+    "lower":
+        [
+            {
+                "suite": 405,
+                "name": "GSEM Technologies"
+            },
+            {
+                "suite": 403,
+                "name": "GSEM Technologies"
+            },
+            {
+                "suite": 402,
+                "name": "GSEM Technologies"
+            },
+            {
+                "suite": 401,
+                "name": "GSEM Technologies"
+            },
+            {
+                "suite": 409,
+                "name": "GSEM Technologies"
+            },
+            {
+                "suite": 406,
+                "name": "Test Suite"
+            }
+        ]
+}

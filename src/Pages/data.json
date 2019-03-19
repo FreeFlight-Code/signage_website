@@ -3,58 +3,58 @@
         [
             {
                 "suite": 501,
-                "name": "GSEM Technologies"
+                "name": "GSEM TEchnologies"
             },
             {
                 "suite": 502,
-                "name": "GSEM Technologies"
+                "name": "ACME CONSTRUCTION"
             },
             {
                 "suite": 503,
-                "name": "GSEM Technologies"
+                "name": "LEGAL SERVICES"
             },
             {
                 "suite": 504,
-                "name": "GSEM Technologies"
+                "name": "CHILD CARE LLC."
             },
             {
                 "suite": 505,
-                "name": "GSEM Technologies"
+                "name": "AVAILABLE"
             },
             {
                 "suite": 506,
-                "name": "GSEM Technologies"
+                "name": "LAWYERS R US"
             },
             {
                 "suite": 507,
-                "name": "Test Suite"
+                "name": "CALL CENTER TROUBLESHOOTING"
             }
         ],
     "lower":
         [
             {
                 "suite": 401,
-                "name": "Accepting Applications"
+                "name": "AVAILABLE"
             },
             {
                 "suite": 402,
-                "name": "Accepting Applications"
+                "name": "AVAILABLE"
             },
             {
                 "suite": 403,
-                "name": "Accepting Applications"
+                "name": "AVAILABLE"
             },
             {
                 "suite": 404,
-                "name": "Accepting Applications"
+                "name": "AVAILABLE"
             },
             {
                 "suite": 405,
-                "name": "Accepting Applications"
+                "name": "AVAILABLE"
             },
             {
                 "suite": 406,
-                "name": "Accepting Applications"
+                "name": "AVAILABLE"
             }
         ]
 }

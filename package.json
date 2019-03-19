@@ -2,7 +2,7 @@
   "name": "signage_website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://FreeFlight-Code.github.io/signage_website",
+  "homepage": ".",
   "dependencies": {
     "gh-pages": "^2.0.1",
 

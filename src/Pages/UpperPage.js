@@ -31,7 +31,7 @@ class UpperPage extends Component {
                 return (upper.map((el, i)=>{
                     return (
                         <div className='suite' key={`UpperSuite_${i}`}>
-                            <span className='suiteName'>{el.name}</span>
+                            <span className='suiteName'>{el.name.toUpperCase()}</span>
                             <span className='suiteNumber'>{el.suite}</span>
                             
                         </div>
@@ -46,7 +46,7 @@ class UpperPage extends Component {
                 return (lower.map((el, i)=>{
                     return (
                         <div className='suite' key={`LowerSuite_${i}`}>
-                            <span className='suiteName'>{el.name}</span>
+                            <span className='suiteName'>{el.name.toUpperCase()}</span>
                             <span className='suiteNumber'>{el.suite}</span>
                             
                         </div>
@@ -60,7 +60,7 @@ class UpperPage extends Component {
       <div className="UpperPageContainer">
         <div className='mapSide' style={isRotated}>
             <div className='headerBar'>
-                <span className='blackburn'>Blackburn Building II</span>
+                <span className='blackburn'>Blackridge Building II</span>
                 <div className='gsemLogo'></div>
             </div>
             <div className='q1' style={upstairsTV ? this.imageMap.upper : this.imageMap.lower }>

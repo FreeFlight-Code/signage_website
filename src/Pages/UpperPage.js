@@ -8,16 +8,28 @@ const lower = suiteData.lower;
 
 
 class UpperPage extends Component {
+    constructor (props){
+        super(props)
+        this.state = {
+            location: 'upper'
+        }
+    }
 
     imageMap = {
         upper: {backgroundImage: "url(https://2016.minneapolis.wordcamp.org/files/2016/05/venue-map.png)"},
         lower: {backgroundImage: "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLsehmf34QmCGXmA6wzbByzduV1PIvCR5pB-MGkAY3weifwXU)"}
     }
+
+    handleClick = ()=>{
+        this.setState({
+            location: this.state.location === 'upper' ? 'lower' : 'upper'
+        })
+    }
     
 
 
     render() {
-        let location = window.location.pathname.replace(/[^a-zA-Z]+/g, '');
+        let { location } = this.state;
         let upstairsTV = (function(){if(location!=="lower"){return true}})();
         const isRotated = (()=>{
             if (!upstairsTV){
@@ -61,7 +73,7 @@ class UpperPage extends Component {
         <div className='mapSide' style={isRotated}>
             <div className='headerBar'>
                 <span className='blackburn'>Blackridge Building II</span>
-                <div className='gsemLogo'></div>
+                <div className='gsemLogo' onClick={this.handleClick}></div>
             </div>
             <div className='q1' style={upstairsTV ? this.imageMap.upper : this.imageMap.lower }>
                 

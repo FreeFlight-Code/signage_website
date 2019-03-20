@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
+import UpperPage from './UpperPage'
 
 class App extends Component {
   render() {
-      console.log(window.location)
     return (
-      <div className="App">
-        Home Page
-        <a href='/lower'>Lower Level</a>
-        <a href='/upper'>Upper Level</a>
-      </div>
+        < UpperPage />
     );
   }
 }

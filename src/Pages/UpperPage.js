@@ -72,7 +72,7 @@ class UpperPage extends Component {
       <div className="UpperPageContainer">
         <div className='mapSide' style={isRotated}>
             <div className='headerBar'>
-                <span className='blackburn'>Blackridge Building II</span>
+                <span className='blackridge'>Blackridge Building II</span>
                 <div className='gsemLogo' onClick={this.handleClick}></div>
             </div>
             <div className='q1' style={upstairsTV ? this.imageMap.upper : this.imageMap.lower }>

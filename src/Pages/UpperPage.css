@@ -37,11 +37,12 @@
     text-shadow: 12px 2px 30px rgb(75, 75, 75);
 }
 .gsemLogo{
-    width: 29%;
-    opacity: .7;
-    background-image: url(https://gsemtechnologies.com/wp-content/uploads/2018/01/GSEMLOGO-1.png);
+    width: 500px;
+    /* opacity: .7; */
+    background-image: url(https://gsemtechnologies.com/wp-content/uploads/2018/01/SimustreamWebHorizontal-website-550x400.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 }
 .suite{
     font-size: 2.2rem;

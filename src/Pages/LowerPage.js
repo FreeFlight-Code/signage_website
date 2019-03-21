@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './UpperPage.css'
-import upperLevelImage from '../images/BR_vert_upper.jpg'
+import './LowerPage.css'
+import lowerLevelImage from '../images/BR_vert_upper.jpg'
 
-class UpperPage extends Component {
+class LowerPage extends Component {
 
     render() {
         const { streams, suites } = this.props; 
@@ -40,23 +40,12 @@ class UpperPage extends Component {
             )
         }
     return (
-      <div className="UpperPageContainer">
-        <div className='blackridge'>Blackridge Building II</div>
+      <div className="LowerPageContainer">
         <div className='gsemLogo' onClick={this.props.handleClick}></div>
-        <div className='mapSide'>
-            <img src={upperLevelImage} className='q1' alt='upper level map'></img>
-            <div className='q2'>
-                <h6>THIS LEVEL</h6>
-                {upperSuites()}
-                <h6>{'DOWNSTAIRS'}</h6>
-                {lowerSuites()}
-
-            </div>
-        </div>
-        <div className='advertisementSide'>
+        <div className='advertisementSide_lower'>
             <iframe
-                id='advertisement_upper_screen'
-                title='advertisement_upper_screen'
+                id='advertisement_lower_screen'
+                title='advertisement_lower_screen'
                 src={stream}
                 frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -64,9 +53,21 @@ class UpperPage extends Component {
             </iframe>
             <div>To advertise here contact Suite 505</div>
         </div>
+        <div className='blackridge_lower'>Blackridge Building II</div>
+        <div className='mapSideVertical'>
+            <img src={lowerLevelImage} alt='lower level map'></img>
+            <div className='suitesVertical'>
+                <h6>THIS LEVEL</h6>
+                {lowerSuites()}
+                <h6>UPSTAIRS</h6>
+                {upperSuites()}
+
+            </div>
+    </div>
+
       </div>
     );
   }
 }
 
-export default UpperPage;
+export default LowerPage;

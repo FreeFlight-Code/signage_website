@@ -2,7 +2,7 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 90px;
     color: white;
     display: grid;
@@ -31,7 +31,7 @@
 }
 .mapSide img{
     width: auto;
-    max-height: 100%
+    max-height: 99%
 }
 .blackridge{
     box-sizing: border-box;

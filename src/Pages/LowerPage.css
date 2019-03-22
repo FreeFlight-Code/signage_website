@@ -3,7 +3,7 @@
     width: 100vh;
     height: 100vw;
     transform: rotate(90deg) translateX(-22vw) translateY(-38.6vh);
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 90px;
     color: white;
     display: flex;

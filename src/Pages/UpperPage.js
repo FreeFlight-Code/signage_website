@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
+import YTubeFrame from './YTubeFrame';
 import './UpperPage.css'
 import upperLevelImage from '../images/BR_vert_upper.jpg'
 
 class UpperPage extends Component {
 
     render() {
-        const { streams, suites } = this.props; 
-        const stream = (()=>{
-            return streams[0];
-        })()
+        const { suites } = this.props; 
         const upperSuites = ()=>{
             if (suites.upper.length){
                 return (suites.upper.map((el, i)=>{
@@ -54,14 +52,7 @@ class UpperPage extends Component {
             </div>
         </div>
         <div className='advertisementSide'>
-            <iframe
-                id='advertisement_upper_screen'
-                title='advertisement_upper_screen'
-                src={stream}
-                frameBorder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen>
-            </iframe>
+            < YTubeFrame />
             <div>To advertise here contact Suite 505</div>
         </div>
       </div>

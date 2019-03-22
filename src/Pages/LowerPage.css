@@ -27,6 +27,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 3rem;
+    height: 100%;
     grid-gap: 3rem;
 }
 .blackridge_lower{
@@ -34,5 +35,6 @@
     font-size: 90px;
 }
 .mapSideVertical img{
-    max-width: 100%;
+    width: 89%;
+    max-height: 100%;
 }

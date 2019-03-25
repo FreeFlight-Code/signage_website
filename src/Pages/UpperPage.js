@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import YTubeFrame from './YTubeFrame';
-import './UpperPage.css'
-import upperLevelImage from '../images/BR_vert_upper.jpg'
+import './UpperPage.css';
+import upperLevelImage from '../images/BR_vert_upper.jpg';
+const adUrl = '';
 
 class UpperPage extends Component {
 
@@ -40,20 +41,22 @@ class UpperPage extends Component {
     return (
       <div className="UpperPageContainer">
         <div className='blackridge'>Blackridge Building II</div>
-        <div className='gsemLogo' onClick={this.props.handleClick}></div>
+        <img className='simustreamLogo' onClick={this.props.handleClick} src='https://gsemtechnologies.com/wp-content/uploads/2018/01/SimustreamWebHorizontal-website-550x400.png'></img>
         <div className='mapSide'>
-            <img src={upperLevelImage} className='q1' alt='upper level map'></img>
-            <div className='q2'>
-                <h6>THIS LEVEL</h6>
+            <img src={upperLevelImage} alt='upper level map'></img>
+            <div className='suiteList'>
+                <div className='LevelName'>THIS LEVEL</div>
                 {upperSuites()}
-                <h6>{'DOWNSTAIRS'}</h6>
+                <div className='LevelName'>DOWNSTAIRS</div>
                 {lowerSuites()}
-
             </div>
         </div>
         <div className='advertisementSide'>
             < YTubeFrame />
-            <div>To advertise here contact Suite 505</div>
+            <span>To advertise here contact Suite 505</span>
+            <div className='adSpace'>
+                <img src={adUrl || 'https://gust-production.s3.amazonaws.com/uploads/startup/panoramic_image/811961/social_20banner.jpg'} alt='advertising space business logo'></img>
+            </div>
         </div>
       </div>
     );

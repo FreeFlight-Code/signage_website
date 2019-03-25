@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import UpperPage from './UpperPage';
 import LowerPage from './LowerPage';
-import streamData from './videoData.json';
-import suiteData from './data.json';
+import suiteData from '../Data/suite_data.json';
 
 class HomePage extends Component {
   constructor(props){
@@ -21,11 +20,11 @@ class HomePage extends Component {
   render() {
     if (this.state.upperTV){
       return (
-          < UpperPage streams={streamData} suites={suiteData} handleClick={this.handleClick.bind(this)}/>
+          < UpperPage suites={suiteData} handleClick={this.handleClick.bind(this)}/>
       );
     } else {
       return (
-        < LowerPage streams={streamData} suites={suiteData} handleClick={this.handleClick.bind(this)}/>
+        < LowerPage suites={suiteData} handleClick={this.handleClick.bind(this)}/>
       )
     }
   }

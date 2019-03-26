@@ -40,7 +40,7 @@ class UpperPage extends Component {
     return (
       <div className="UpperPageContainer">
         <div className='blackridge'>Blackridge Building II</div>
-        <div className='gsemLogo' onClick={this.props.handleClick}></div>
+        <div className='simustreamLogo' onClick={this.props.handleClick}></div>
         <div className='mapSide'>
             <img src={upperLevelImage} className='q1' alt='upper level map'></img>
             <div className='q2'>
@@ -54,6 +54,9 @@ class UpperPage extends Component {
         <div className='advertisementSide'>
             < YTubeFrame />
             <div>To advertise here contact Suite 505</div>
+            <div className='adSpace'>
+                <img src='https://gsemtechnologies.com/wp-content/uploads/2018/01/GSEMLOGO-1.png' alt='Ad logo'></img>
+            </div>
         </div>
       </div>
     );

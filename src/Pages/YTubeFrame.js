@@ -16,7 +16,7 @@ export default class YTubeFrame extends Component {
     constructor(props){
         super(props)
         this.state = {
-            defaultVideo: `https://www.youtube.com/embed?playlist&list=PLvFz1VAZcZYZWb3i7xlswGDTz2WJp3MLr&autoplay=1&index=5`,
+            defaultVideo: `https://simustream.com/watch/demo-account/24239d196c6c6c000d6165700981d1f3`,
             currentVideo: ``
         }
     }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import YTubeFrame from './YTubeFrame';
-import './LowerPage.css'
 import lowerLevelImage from '../images/BR_vert_upper.jpg'
 
 class LowerPage extends Component {

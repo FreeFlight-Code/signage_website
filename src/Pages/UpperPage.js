@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import YTubeFrame from './YTubeFrame';
-import './UpperPage.css'
 import upperLevelImage from '../images/BR_vert_upper.jpg'
 
 class UpperPage extends Component {
@@ -39,18 +38,20 @@ class UpperPage extends Component {
         }
     return (
       <div className="UpperPageContainer">
+
         <div className='blackridge'>Blackridge Building II</div>
         <div className='simustreamLogo' onClick={this.props.handleClick}></div>
+
         <div className='mapSide'>
-            <img src={upperLevelImage} className='q1' alt='upper level map'></img>
+            <img src={upperLevelImage} className='map upper' alt='upper level map'></img>
             <div className='q2'>
                 <h6>THIS LEVEL</h6>
                 {upperSuites()}
                 <h6>{'DOWNSTAIRS'}</h6>
                 {lowerSuites()}
-
             </div>
         </div>
+
         <div className='advertisementSide'>
             < YTubeFrame />
             <div>To advertise here contact Suite 505</div>
@@ -59,6 +60,7 @@ class UpperPage extends Component {
                 <div>Your logo here</div>
             </div>
         </div>
+
       </div>
     );
   }

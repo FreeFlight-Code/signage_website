@@ -41,7 +41,7 @@ class LowerPage extends Component {
       <div className="LowerPageContainer">
       <div className='header-vert'>
         <div className='simustreamLogo' onClick={this.props.handleClick}></div>
-        <img src='https://gsemtechnologies.com/wp-content/uploads/2018/01/GSEMLOGO-1.png' alt='Ad logo'></img>
+        <img className='adSpaceLogo' src='https://gsemtechnologies.com/wp-content/uploads/2018/01/GSEMLOGO-1.png' alt='Ad logo'></img>
       </div>
 
         <div className='advertisementSide_lower'>

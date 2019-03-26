@@ -15,10 +15,11 @@
     background-size: cover;
     overflow: hidden;
 }
-/* .LowerPageContainer .simustreamLogo{
-    padding-bottom: 5vw;
-    width: 33%;
-} */
+
+.simustreamLogo, .adSpaceLogo{
+    width: 40%;
+}
+
 .advertisementSide_lower div{
     padding-left: 100px;
     font-size: 50px;
@@ -41,7 +42,7 @@
 .header-vert{
     height: 10vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: .5em;
 }

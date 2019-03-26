@@ -55,7 +55,8 @@ class UpperPage extends Component {
             < YTubeFrame />
             <div>To advertise here contact Suite 505</div>
             <div className='adSpace'>
-                <img src='https://gsemtechnologies.com/wp-content/uploads/2018/01/GSEMLOGO-1.png' alt='Ad logo'></img>
+                <img className='adSpaceLogo' src='https://gsemtechnologies.com/wp-content/uploads/2018/01/GSEMLOGO-1.png' alt='Ad logo'></img>
+                <div>Your logo here</div>
             </div>
         </div>
       </div>

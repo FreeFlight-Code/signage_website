@@ -27,7 +27,7 @@
 .mapSideVertical{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 3rem;
+    margin: 6rem;
     height: 100%;
     grid-gap: 3rem;
 }

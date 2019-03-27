@@ -21,7 +21,7 @@
 .mapSide, .advertisementSide{
     position: relative;
     height: 100%;
-    margin: 1rem;
+    margin: 4rem;
 }
 .mapSide{
     display: grid;

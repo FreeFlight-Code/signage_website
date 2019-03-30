@@ -3,4 +3,31 @@
     .header{
         text-align: center;
     }
+    .data{
+        padding: 0 .5em;
+        font-size: .8em;
+        .label{
+            padding-bottom: .2em;
+            &.bottom{
+                padding-top: .7em;
+            }
+        }
+        .suite{
+            font-size: .8em;
+            display: flex;
+            justify-content: space-between;
+            padding-left: .5em;
+        }
+    }
+    img.map{
+        min-height: 50vmax;
+    }
+    #player{
+        display: none;
+        width: 100%;
+    }
+    .adSpace{
+        grid-column: 3;
+        grid-row: 3;
+    }
 }

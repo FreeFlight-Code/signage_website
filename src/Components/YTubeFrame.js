@@ -25,7 +25,7 @@ export default class YTubeFrame extends Component {
 
         return(
             <iframe
-                id='ytPlayer'
+                id='player'
                 title='YouTube Player'
                 src={this.state.currentVideo || this.state.defaultVideo}
                 frameBorder="0"

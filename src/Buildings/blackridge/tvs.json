@@ -5,6 +5,7 @@
         "orientation": "portrait",
         "header": "Blackridge Building II",
         "adSpaceUrl": "",
+        "mapUrl": "https://2016.minneapolis.wordcamp.org/files/2016/05/venue-map.png",
         "dataBottomDescriptor":"Upstairs",
         "dataBottom":         
             [
@@ -73,6 +74,75 @@
         "header": "Blackridge Building II",
         "dataBottomDescriptor":"Downstairs",
         "adSpaceUrl": "",
+        "mapUrl": "https://case.edu/dental/sites/case.edu.dental/files/2018-04/groundfloor.jpg",
+        "dataTop":         
+            [
+                {
+                    "suite": 501,
+                    "name": "North eastern services (NES)"
+                },
+                {
+                    "suite": 502,
+                    "name": "Orange Geek"
+                },
+                {
+                    "suite": 503,
+                    "name": "Paradigm Direct Services"
+                },
+                {
+                    "suite": 504,
+                    "name": "Kirton McConkie (Entrance)"
+                },
+                {
+                    "suite": 505,
+                    "name": "GSEM Technologies"
+                },
+                {
+                    "suite": 506,
+                    "name": "Kirton McConkie"
+                },
+                {
+                    "suite": 507,
+                    "name": "Sierra Hospice"
+                }
+            ],
+        "dataBottom":
+            [
+                {
+                    "suite": 401,
+                    "name": "AVAILABLE"
+                },
+                {
+                    "suite": 402,
+                    "name": "AVAILABLE"
+                },
+                {
+                    "suite": 403,
+                    "name": "AVAILABLE"
+                },
+                {
+                    "suite": 404,
+                    "name": "AVAILABLE"
+                },
+                {
+                    "suite": 405,
+                    "name": "AVAILABLE"
+                },
+                {
+                    "suite": 406,
+                    "name": "AVAILABLE"
+                }
+            ]
+
+    },
+    {
+        "tvName":"custom",
+        "layout":"universal",
+        "orientation": "landscape",
+        "header": "The David Map",
+        "dataBottomDescriptor":"G",
+        "adSpaceUrl": "",
+        "mapUrl": "https://thenypost.files.wordpress.com/2017/11/171120-victoria-secret-fashion-money-02.jpg?quality=90&strip=all&strip=all",
         "dataTop":         
             [
                 {

@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import YTubeFrame from './YTubeFrame';
+import YTubeFrame from '../Components/YTubeFrame';
 import upperLevelImage from '../images/BR_vert_upper.jpg'
 
-class UpperPage extends Component {
+class Horizontal extends Component {
 
     render() {
-        const { suites } = this.props; 
         const upperSuites = ()=>{
-            if (suites.upper.length){
-                return (suites.upper.map((el, i)=>{
+            if (this.props.data.dataTop.length){
+                return (this.props.data.dataTop.map((el, i)=>{
                     return (
                         <div className='suite' key={`UpperSuite_${i}`}>
                             <span className='suiteName'>{el.name.toUpperCase()}</span>
@@ -22,8 +21,8 @@ class UpperPage extends Component {
             )
         }
         const lowerSuites = ()=>{
-            if (suites.lower.length){
-                return (suites.lower.map((el, i)=>{
+            if (this.props.data.dataBottom.length){
+                return (this.props.data.dataBottom.map((el, i)=>{
                     return (
                         <div className='suite' key={`LowerSuite_${i}`}>
                             <span className='suiteName'>{el.name.toUpperCase()}</span>
@@ -40,7 +39,7 @@ class UpperPage extends Component {
       <div className="UpperPageContainer">
 
         <div className='blackridge'>Blackridge Building II</div>
-        <img className='simustreamLogo' src='https://gsemtechnologies.com/wp-content/uploads/2018/01/SimustreamWebHorizontal-website-550x400.png' onClick={this.props.handleClick}></img>
+        <img alt='simustream logo' className='simustreamLogo' src='https://gsemtechnologies.com/wp-content/uploads/2018/01/SimustreamWebHorizontal-website-550x400.png' onClick={this.props.handleClick}></img>
 
         <div className='mapSide'>
             <img src={upperLevelImage} className='map upper' alt='upper level map'></img>
@@ -66,4 +65,4 @@ class UpperPage extends Component {
   }
 }
 
-export default UpperPage;
+export default Horizontal;

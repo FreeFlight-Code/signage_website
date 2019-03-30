@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import YTubeFrame from './YTubeFrame';
+import YTubeFrame from '../Components/YTubeFrame';
 import lowerLevelImage from '../images/BR_vert_upper.jpg'
 
-class LowerPage extends Component {
+class Vertical extends Component {
 
     render() {
-        const { suites } = this.props; 
         const upperSuites = ()=>{
-            if (suites.upper.length){
-                return (suites.upper.map((el, i)=>{
+            if (this.props.data.dataTop.length){
+                return (this.props.data.dataTop.map((el, i)=>{
                     return (
                         <div className='suite' key={`UpperSuite_${i}`}>
                             <span className='suiteName'>{el.name.toUpperCase()}</span>
@@ -22,8 +21,8 @@ class LowerPage extends Component {
             )
         }
         const lowerSuites = ()=>{
-            if (suites.lower.length){
-                return (suites.lower.map((el, i)=>{
+            if (this.props.data.dataBottom.length){
+                return (this.props.data.dataBottom.map((el, i)=>{
                     return (
                         <div className='suite' key={`LowerSuite_${i}`}>
                             <span className='suiteName'>{el.name.toUpperCase()}</span>
@@ -64,4 +63,4 @@ class LowerPage extends Component {
   }
 }
 
-export default LowerPage;
+export default Vertical;

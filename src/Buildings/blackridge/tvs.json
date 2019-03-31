@@ -7,7 +7,7 @@
         "adSpaceUrl": "",
         "mapUrl": "https://2016.minneapolis.wordcamp.org/files/2016/05/venue-map.png",
         "dataBottomDescriptor":"Upstairs",
-        "dataBottom":         
+        "dataBottom":
             [
                 {
                     "suite": 501,
@@ -75,7 +75,7 @@
         "dataBottomDescriptor":"Downstairs",
         "adSpaceUrl": "",
         "mapUrl": "https://case.edu/dental/sites/case.edu.dental/files/2018-04/groundfloor.jpg",
-        "dataTop":         
+        "dataTop":
             [
                 {
                     "suite": 501,
@@ -143,7 +143,7 @@
         "dataBottomDescriptor":"G",
         "adSpaceUrl": "",
         "mapUrl": "https://thenypost.files.wordpress.com/2017/11/171120-victoria-secret-fashion-money-02.jpg?quality=90&strip=all&strip=all",
-        "dataTop":         
+        "dataTop":
             [
                 {
                     "suite": 501,

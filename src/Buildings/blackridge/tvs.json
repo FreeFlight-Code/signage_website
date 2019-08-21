@@ -5,7 +5,7 @@
         "orientation": "portrait",
         "header": "Blackridge Building II",
         "adSpaceUrl": "",
-        "mapUrl": "https://2016.minneapolis.wordcamp.org/files/2016/05/venue-map.png",
+        "mapUrl": "https://freeflight-code.github.io/signage_website/static/media/BR_vert_upper.ec3fc7f2.jpg",
         "dataBottomDescriptor":"Upstairs",
         "dataBottom":
             [
@@ -74,7 +74,7 @@
         "header": "Blackridge Building II",
         "dataBottomDescriptor":"Downstairs",
         "adSpaceUrl": "",
-        "mapUrl": "https://case.edu/dental/sites/case.edu.dental/files/2018-04/groundfloor.jpg",
+        "mapUrl": "https://freeflight-code.github.io/signage_website/static/media/BR_vert_upper.ec3fc7f2.jpg",
         "dataTop":
             [
                 {
@@ -138,11 +138,11 @@
     {
         "tvName":"custom",
         "layout":"universal",
-        "orientation": "landscape",
-        "header": "The David Map",
-        "dataBottomDescriptor":"G",
+        "orientation": "portrait",
+        "header": "Blackridge Building II",
+        "dataBottomDescriptor":"my other level",
         "adSpaceUrl": "",
-        "mapUrl": "https://thenypost.files.wordpress.com/2017/11/171120-victoria-secret-fashion-money-02.jpg?quality=90&strip=all&strip=all",
+        "mapUrl": "https://freeflight-code.github.io/signage_website/static/media/BR_vert_upper.ec3fc7f2.jpg",
         "dataTop":
             [
                 {

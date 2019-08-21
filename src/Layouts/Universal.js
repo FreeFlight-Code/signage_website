@@ -3,8 +3,19 @@ import VideoPlayer from '../Components/YTubeFrame';
 
 class Universal extends Component {
     render(){
-        const { mapUrl, orientation, tvName, layout, header, dataBottomDescriptor, adSpaceUrl, dataTop, dataBottom } = this.props.data;
-        const checkOrientation = orientation.includes('portrait') ? 'Universal Container vertical' : 'Universal Container';
+      // console.log(window.orientation);
+        const {
+          mapUrl,
+          orientation,
+          // tvName, layout,
+          header,
+          dataBottomDescriptor,
+          adSpaceUrl,
+          dataTop,
+          dataBottom
+        } = this.props.data;
+
+        const checkOrientation = orientation.includes('portrait') ? 'Universal Container-vertical' : 'Universal Container';
         const renderData = function (data, placement){
             return data.map((el, i)=>{
                 return (
@@ -14,7 +25,7 @@ class Universal extends Component {
                     </div>
                 )
             })
-        } 
+        }
         const renderAdspace = function(){
             if (adSpaceUrl){
                 return (
@@ -26,9 +37,9 @@ class Universal extends Component {
             }else {
                 return (
                     <div className='adSpace'>
-                        <div>To advertise here contact Suite 505</div>
+                    <div><h4>To advertise here contact Suite 505</h4></div>
                         <img className='adSpaceLogo' src='https://gsemtechnologies.com/wp-content/uploads/2018/01/GSEMLOGO-1.png' alt='Ad logo'></img>
-                        <div>Your logo here</div>
+                    <div><h4>Your logo here</h4></div>
                     </div>
                 )
             }
@@ -36,17 +47,17 @@ class Universal extends Component {
 
         return(
             <div className={checkOrientation}>
-                <div className='header'>{header}</div>
-                <img id='simustreamLogo' src='https://gsemtechnologies.com/wp-content/uploads/2018/01/SimustreamWebHorizontal-website-550x400.png' alt='Simustream company Logo'></img>
-                < VideoPlayer />
-                <div className='data'>
-                    <div className='label' >THIS LEVEL</div>
-                    {renderData(dataTop, 'top')}
-                    <div className='label bottom' >{dataBottomDescriptor.toUpperCase()}</div>
-                    {renderData(dataBottom, 'bottom')}
-                </div>
-                <img className='map' src={mapUrl}></img>
-                {renderAdspace()}
+              {renderAdspace()}
+              <img id='simustreamLogo' src='https://gsemtechnologies.com/wp-content/uploads/2018/01/SimustreamWebHorizontal-website-550x400.png' alt='Simustream company Logo'></img>
+              <div className='header'><h1>{header}</h1></div>
+              < VideoPlayer />
+              <img alt="map for this floor" className='map' src={mapUrl}></img>
+              <div className='data'>
+                <div className='label' >THIS LEVEL</div>
+                {renderData(dataTop, 'top')}
+                <div className='label bottom' >{dataBottomDescriptor.toUpperCase()}</div>
+                {renderData(dataBottom, 'bottom')}
+              </div>
             </div>
         )
     }

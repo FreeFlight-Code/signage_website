@@ -61,7 +61,7 @@
     // max-height: 50vmax;
     width: 100vh;
     min-height: 100vw;
-    transform: rotate(90deg) translateX(-34.5vmin) translateY(-24.2vmin);
+    transform: rotate(90deg) translateX(-44.5vmin) translateY(-33.2vmin);
     grid-template-columns: 50vmin;
     grid-template-rows: 7vmax 7vmax 26vmax 60vmax;
     justify-items: center;
@@ -90,7 +90,7 @@
   }
 }
   // *************  landscape tv  *************
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 700px){
   .Universal.Container{
     grid-template-rows: 10vmin 50vmin auto;
     grid-template-columns: 25vmax 25vmax 40vmax;

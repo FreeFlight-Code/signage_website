@@ -43,7 +43,6 @@
 
   #player{
     display: none;
-    // width: 100%;
   }
   .adSpace{
     align-self: center;
@@ -55,47 +54,25 @@
     }
   }
 }
-//**************  portrait tv  **************
-@media only screen and (min-width: 2000px){
-  .Universal.Container-vertical{
-    // max-height: 50vmax;
-    width: 100vh;
-    min-height: 100vw;
-    transform: rotate(90deg) translateX(-44.5vmin) translateY(-33.2vmin);
-    grid-template-columns: 50vmin;
-    grid-template-rows: 7vmax 7vmax 26vmax 60vmax;
-    justify-items: center;
-    align-items: center;
-    .header{
-      max-width: 90vmin;
-    }
+
+@media only screen and (min-width: 500px){
+  .Universal.Container, .Universal.Container-vertical{
+    grid-template-rows: 10vmin 10vmin;
+    grid-template-columns: 50vw;
     #player{
       display: block;
-      width: calc(100% - .5rem);
-      height: 100%;
-      max-width: 90vmin;
-      grid-column: span 2;
-    }
-    .data{
-      height: 100%;
-      font-size: .6rem;
-      line-height: .7rem;
-      grid-column: 2 / span 1;
-    }
-    .map{
-      align-self: start;
-      height: 90%;
-      grid-column: 1 / span 1;
+      width: 100%;
+      height: 100vmin;
+      grid-column: 1 / span 2;
+      grid-row: 5;
     }
   }
 }
-  // *************  landscape tv  *************
-@media only screen and (min-width: 700px){
-  .Universal.Container{
-    grid-template-rows: 10vmin 50vmin auto;
+@media only screen and (min-width: 1100px){
+  .Universal.Container, .Universal.Container-vertical{
+    grid-template-rows: 10vmin 50vmin;
     grid-template-columns: 25vmax 25vmax 40vmax;
     #player{
-      display: block;
       width: 100%;
       height: 100%;
       max-height: 50vh;
@@ -122,6 +99,52 @@
       grid-column: 1;
       grid-row: 2 / span 2;
 
+    }
+  }
+}
+
+//**************  portrait tv  **************
+@media only screen and (min-width: 2000px){
+  .Universal.Container-vertical{
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(90deg) translateX(-38.5vmin) translateY(-38.2vmin);
+    grid-template-columns: 50vmin;
+    grid-template-rows: 7vmax 7vmax 26vmax 60vmax;
+    justify-items: center;
+    align-items: center;
+    .adSpace
+    {
+      order: 1;
+    }
+    #simustreamLogo
+    {
+      grid-column: 2;
+    }
+    .header{
+      grid-row: 2;
+      max-width: 90vmin;
+    }
+    #player{
+      display: block;
+      width: calc(100% - .5rem);
+      height: 100%;
+      max-width: 90vmin;
+      grid-column: 1 / span 2;
+      grid-row: 3;
+    }
+    .data, .map
+    {
+      grid-row: 4;
+    }
+    .data{
+      height: 100%;
+      font-size: .6rem;
+      line-height: .7rem;
+    }
+    .map{
+      align-self: start;
+      height: 90%;
     }
   }
 }

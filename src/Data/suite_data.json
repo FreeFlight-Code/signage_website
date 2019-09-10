@@ -7,7 +7,7 @@
             },
             {
                 "suite": 502,
-                "name": "Orange Geek"
+                "name": "SPL Financial"
             },
             {
                 "suite": 503,
@@ -33,12 +33,16 @@
     "lower":
         [
             {
-                "suite": 401,
-                "name": "AVAILABLE"
+                "suite": "401A",
+                "name": "Zion's Way Home Health & Hospice"
+            },
+            {
+                "suite": "401B",
+                "name": "A Gentle Touch Homecare"
             },
             {
                 "suite": 402,
-                "name": "AVAILABLE"
+                "name": "Vault AIS"
             },
             {
                 "suite": 403,
@@ -50,10 +54,6 @@
             },
             {
                 "suite": 405,
-                "name": "AVAILABLE"
-            },
-            {
-                "suite": 406,
                 "name": "AVAILABLE"
             }
         ]

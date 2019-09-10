@@ -9,15 +9,15 @@ import React, { Component } from 'react';
 *       adsPerDay: 3                                            // number for # of views in a day
 *       timeRequested: 1230                                     // number for military time
 *   }
-*
+*https://final.simustream.com/watch/ryoulive/fd188ce355638986373ef230fbb28fd8
 */
 
 export default class YTubeFrame extends Component {
     constructor(props){
         super(props)
         this.state = {
-          defaultVideo: `https://final.simustream.com/watch/ryoulive/fd188ce355638986373ef230fbb28fd8`,
-            currentVideo: ``
+          defaultVideo: `https://play.simustream.com/?id=5d4a6f504c6f0836310e5b7c`,
+          currentVideo: ``
         }
     }
 
@@ -27,7 +27,7 @@ export default class YTubeFrame extends Component {
             <iframe
                 id='player'
                 title='YouTube Player'
-                src={this.state.currentVideo || this.state.defaultVideo}
+                src={this.props.currentVideo || this.state.defaultVideo}
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen>

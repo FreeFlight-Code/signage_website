@@ -14,7 +14,7 @@ class App extends Component {
       }
     }
   }
-  
+
   pathName = window.location.pathname.slice(1).split('/');
 
   // grabs the tv request from the url
@@ -41,7 +41,7 @@ class App extends Component {
         return < Universal data={this.state.tv} />
       default:
         return (
-          <div>Undefined Route</div>
+          <div>Undefined Route... format should be /tvData/[buildingName]/[number]</div>
           )
         }
   }

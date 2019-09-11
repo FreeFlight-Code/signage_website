@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import VideoPlayer from '../Components/YTubeFrame';
+import AdSpace from '../Components/AdSpace';
 
 class Universal extends Component {
     render(){
-      // console.log(window.orientation);
         const {
           mapUrl,
           orientation,
@@ -16,6 +16,7 @@ class Universal extends Component {
         } = this.props.data;
 
         const checkOrientation = orientation.includes('portrait') ? 'Universal Container-vertical' : 'Universal Container';
+        
         const renderData = function (data, placement){
             return data.map((el, i)=>{
                 return (
@@ -26,28 +27,12 @@ class Universal extends Component {
                 )
             })
         }
-        const renderAdspace = function(){
-            if (adSpaceUrl){
-                return (
-                    <div className='adSpace'>
-                        <img className='adSpaceLogo' src={adSpaceUrl} alt='Ad logo'></img>
-                    </div>
+        const adObj = {
 
-                )
-            }else {
-                return (
-                    <div className='adSpace'>
-                    <div><h4>To advertise here contact Suite 505</h4></div>
-                        <img className='adSpaceLogo' src='https://gsemtechnologies.com/wp-content/uploads/2018/01/GSEMLOGO-1.png' alt='Ad logo'></img>
-                    <div><h4>Your logo here</h4></div>
-                    </div>
-                )
-            }
         }
-
         return(
             <div className={checkOrientation}>
-              {renderAdspace()}
+              < AdSpace />
               <img id='simustreamLogo' src='https://gsemtechnologies.com/wp-content/uploads/2018/01/SimustreamWebHorizontal-website-550x400.png' alt='Simustream company Logo'></img>
               <div className='header'><h1>{header}</h1></div>
               < VideoPlayer />

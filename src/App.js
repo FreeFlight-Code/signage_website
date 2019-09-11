@@ -1,6 +1,4 @@
 import React,  { Component } from 'react';
-import Horizontal from './Layouts/Horizontal';
-import Vertical from './Layouts/Vertical';
 import Universal from './Layouts/Universal';
 import axios from 'axios';
 import './App.scss'
@@ -31,19 +29,16 @@ class App extends Component {
       });
     });
   }
-    render(){
-    switch(this.state.tv.layout){
-      case 'horizontal':
-        return < Horizontal data={this.state.tv} />
-      case 'vertical':
-        return < Vertical data={this.state.tv} />
-      case 'universal':
-        return < Universal data={this.state.tv} />
-      default:
-        return (
-          <div>Undefined Route... format should be /tvData/[buildingName]/[number]</div>
-          )
-        }
+
+  render(){
+    if(this.state.tv)
+    {
+      return < Universal data={this.state.tv} />
+    }
+    else 
+    {
+      return <div>  Undefined Route... format should be /tvData/[buildingName]/[tv number]  </div>
+    }
   }
 
 }

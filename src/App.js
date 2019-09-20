@@ -31,7 +31,7 @@ class App extends Component {
   }
 
   render(){
-    if(this.state.tv)
+    if(this.state.tv && this.state.tv.orientation && this.state.tv.dataBottom.length)
     {
       return < Universal data={this.state.tv} />
     }

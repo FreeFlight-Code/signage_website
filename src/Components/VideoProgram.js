@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import YTubeFrame from './YTubeFrame';
 
+import videos from '../Buildings/videoData_Simustream.json';
+
 export default class VideoProgram extends Component {
     constructor(props) {
         super(props);
@@ -25,9 +27,9 @@ export default class VideoProgram extends Component {
     }
 
     hasVideoData(){
-        if(!this.props.videos.length) throw "no data found";
+        if(!videos.length) throw "no data found";
         try{
-            if(this.props.videos.length) return true
+            if(videos.length) return true
         }
         catch (e){
             console.log(e);
@@ -35,7 +37,7 @@ export default class VideoProgram extends Component {
     }
 
     videoIndexIsGood(){
-        if(this.state.videoIndex > -1 && this.state.videoIndex < this.props.videos.length){
+        if(this.state.videoIndex > -1 && this.state.videoIndex < videos.length){
             return true;
         } else return false
     }
@@ -44,7 +46,7 @@ export default class VideoProgram extends Component {
     async start(){
         await this.setState({
             videoIndex: 0,
-            currentVideo: this.props.videos[0],
+            currentVideo: videos[0],
             ended: false,
             running: true
         });
@@ -74,17 +76,19 @@ export default class VideoProgram extends Component {
     }
 
     nextVideo(reset) {
-        let newIndex = ++this.state.videoIndex
+        console.log('next video')
+        let newIndex = this.state.videoIndex + 1;
 
         // if last video, repeat
-        if(this.state.videoIndex === this.props.videos.length){
-                this.start();
+        if(newIndex === videos.length){
+            console.log('last video')
+            this.start();
 
         // go to next video
         } else {
             this.setState({
                 videoIndex: newIndex,
-                currentVideo: this.props.videos[newIndex]
+                currentVideo: videos[newIndex]
               });
             setTimeout(()=>{
                   this.nextVideo();
@@ -94,15 +98,9 @@ export default class VideoProgram extends Component {
     }
   
     render() {
-        if (this.state.currentVideo && this.state.currentVideo.url){
+        const { currentVideo } = this.state;
             return (
-              < YTubeFrame video={this.state.currentVideo}/>
+              currentVideo && < YTubeFrame video={currentVideo}/>
             );
-
-        } else {
-            return (
-                null
-            )
-        }
     }
   }

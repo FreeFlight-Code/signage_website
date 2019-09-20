@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import VideoPlayer from '../Components/YTubeFrame';
+import VideoPlayer from '../Components/VideoProgram';
 import AdSpace from '../Components/AdSpace';
 
 class Universal extends Component {

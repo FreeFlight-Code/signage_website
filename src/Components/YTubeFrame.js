@@ -12,26 +12,19 @@ import React, { Component } from 'react';
 *https://final.simustream.com/watch/ryoulive/fd188ce355638986373ef230fbb28fd8
 */
 
-export default class YTubeFrame extends Component {
-    constructor(props){
-        super(props)
-        this.state = {
-          defaultVideo: `https://play.simustream.com/?id=5d4a6f504c6f0836310e5b7c`,
-          currentVideo: ``
-        }
-    }
+export default function YTubeFrame (props) {
 
-    render(){
-
-        return(
-            <iframe
-                id='player'
-                title='YouTube Player'
-                src={this.props.currentVideo || this.state.defaultVideo}
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen>
-            </iframe>
-        )
-    }
+    const { url } = props.video;
+    return(
+        <iframe
+            id='player'
+            title='YouTube Player'
+            src={url}
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            autoPlay="1"
+            >
+        </iframe>
+    )
 }

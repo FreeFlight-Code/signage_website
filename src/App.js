@@ -7,9 +7,6 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      tv:{
-        layout: ''
-      }
     }
   }
 
@@ -22,18 +19,23 @@ class App extends Component {
   }
 
   componentDidMount(){
-    axios.get(`/tvdata/${this.location.building}/${this.location.tvIndex}`).then((res)=>{
-      console.log(res, 'res...')
-      this.setState({
-        tv: res.data
-      });
-    });
+    axios.get(`/tvdata/${this.location.building}/${this.location.tvIndex}`)
+      .then( res=>{
+        if (res.data) {
+          this.setState({
+            tv: res.data
+          });
+
+        }
+      })
+      .catch(err=>console.log('no data from backend'));
   }
 
   render(){
-    if(this.state.tv && this.state.tv.orientation && this.state.tv.dataBottom.length)
+    const { tv } = this.state;
+    if(tv && tv.orientation && tv.dataBottom.length)
     {
-      return < Universal data={this.state.tv} />
+      return < Universal data={tv} />
     }
     else 
     {

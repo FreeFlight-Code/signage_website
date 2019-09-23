@@ -14,11 +14,11 @@ import React from 'react';
 
 export default function YTubeFrame (props) {
 
-    const { url } = props.video;
+    const { url, title } = props.video;
     return(
         <iframe
             id='player'
-            title='YouTube Player'
+            title={title}
             src={url}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

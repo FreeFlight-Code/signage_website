@@ -7,10 +7,9 @@ class Universal extends Component {
         const {
           mapUrl,
           orientation,
-          // tvName, layout,
+          // tvName, layout, adSpaceUrl,
           header,
           dataBottomDescriptor,
-          adSpaceUrl,
           dataTop,
           dataBottom
         } = this.props.data;
@@ -27,9 +26,7 @@ class Universal extends Component {
                 )
             })
         }
-        const adObj = {
 
-        }
         return(
             <div className={checkOrientation}>
               < AdSpace />

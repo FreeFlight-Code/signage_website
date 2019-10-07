@@ -1,15 +1,17 @@
 [
     {
-        "name": "CRM company_name",                
-        "url": "www.youtube.com/embed/4Akc_yDkM2A?autoplay=1",
+        "title": "CRM company_name",                
+        "url": "https://www.youtube.com/embed/4Akc_yDkM2A?autoplay=1",
         "adsPerDay": 3,
-        "timeRequested": 1230
+        "timeRequested": 1230,
+        "delay": 20
     },
     {
-        "name": "CRM company_name",                
-        "url": "www.youtube.com/embed/4Akc_yDkM2A?autoplay=1",
-        "adsPerDay": 3,
-        "timeRequested": 1230
+        "tile": "CRM company_name",                
+        "url": "https://www.youtube.com/embed/4Akc_yDkM2A?autoplay=1",
+        "adsPerDay": 5,
+        "timeRequested": 1230,
+        "delay": 10
     }
 
 ]

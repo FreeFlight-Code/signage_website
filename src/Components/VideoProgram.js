@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import YTubeFrame from './YTubeFrame';
+import ads from './AdProgram';
 
 import videos from '../Buildings/videoData_Simustream.json';
-import ads from '../Buildings/videoData_Ads.json';
-// const videos = [];
-// const ads = [];
+
 export default class VideoProgram extends Component {
     constructor(props) {
         super(props);
@@ -20,8 +19,8 @@ export default class VideoProgram extends Component {
             // console.log('data found')
             this.start();
         };
-        if(this.checkData(ads)){
-            // console.log('ads found')
+        if(ads.get()){
+            ads.runProgram();
         };
     }
 
@@ -56,9 +55,9 @@ export default class VideoProgram extends Component {
         this.play();
     }
 
-    play(){
+    async play(){
         console.log('play')
-        this.setState({
+        await this.setState({
             running: true
         });
         this.nextVideo();
@@ -79,23 +78,35 @@ export default class VideoProgram extends Component {
         })
     }
 
+    // checkAds(){
+    //     if(ads.currentVideo) return true;
+    //     return false;
+    // }
+
     nextVideo() {
-        console.log('next video')
-        const { videoIndex, currentVideo, running } = this.state;
+        // console.log('next video')
+        const { videoIndex, currentVideo } = this.state;
         let newIndex = videoIndex + 1;
+        if (ads.currentVideo){
+            console.log(ads.currentVideo)
+            setTimeout(()=>{
+                this.setState({
+                    currentVideo: ads.currentVideo
+                });
+                this.nextVideo();
+            }, currentVideo.delay * 1000)
+        } else
         if (newIndex === videos.length){
-            console.log('last video')
+            // console.log('last video')
             this.start();
 
         } else {
             setTimeout(()=>{
-                if(running){
-                    this.setState({
-                        videoIndex: newIndex,
-                        currentVideo: videos[newIndex]
-                    });
-                    this.nextVideo();
-                }
+                this.setState({
+                    videoIndex: newIndex,
+                    currentVideo: videos[newIndex]
+                });
+                this.nextVideo();
             }, currentVideo.delay * 1000)
         }
     }

@@ -2,7 +2,7 @@
   "name": "signage_website",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "http://localhost:3000",
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
@@ -25,7 +25,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3031",
   "browserslist": [
     ">0.2%",
     "not dead",

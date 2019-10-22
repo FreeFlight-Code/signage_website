@@ -4,15 +4,20 @@ const express = require('express'),
     bodyParser = require('body-parser');
 
 const config = {
-    port: 3001
+    port: 3031
 }
 
 const app = express();
 
 app.use(bodyParser.json());
 
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+  });
+
 console.log('SERVING FILES FORM BACKEND', __dirname)
-// app.use(express.static(__dirname + '/../build'));
+app.use(express.static(__dirname + '/../build'));
 
 app.get('/tvdata/:building/:tvIndex', (req, res) => {
     const { building, tvIndex } = req.params;

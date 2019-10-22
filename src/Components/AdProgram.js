@@ -37,6 +37,6 @@ const ads = {
         }
         this.currentVideo = null;
     },
-    currentVideo: {}
+    currentVideo: null
 }
 export default ads;

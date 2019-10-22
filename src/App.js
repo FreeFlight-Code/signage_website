@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    axios.get(`/tvdata/${this.location.building}/${this.location.tvIndex}`)
+    axios.get(`http://localhost:3031/tvdata/${this.location.building}/${this.location.tvIndex}`)
       .then( res=>{
         if (res.data) {
           this.setState({

@@ -78,22 +78,22 @@ export default class VideoProgram extends Component {
         })
     }
 
-    // checkAds(){
-    //     if(ads.currentVideo) return true;
-    //     return false;
-    // }
+    checkAds(){
+        if(ads.currentVideo) return true;
+        return false;
+    }
 
-    nextVideo() {
+    async nextVideo() {
         // console.log('next video')
         const { videoIndex, currentVideo } = this.state;
         let newIndex = videoIndex + 1;
+        console.log(ads.currentVideo)
         if (ads.currentVideo){
-            console.log(ads.currentVideo)
-            setTimeout(()=>{
+            await setTimeout(()=>{
                 this.setState({
                     currentVideo: ads.currentVideo
                 });
-                this.nextVideo();
+                // this.nextVideo();
             }, currentVideo.delay * 1000)
         } else
         if (newIndex === videos.length){
@@ -101,7 +101,7 @@ export default class VideoProgram extends Component {
             this.start();
 
         } else {
-            setTimeout(()=>{
+            await setTimeout(()=>{
                 this.setState({
                     videoIndex: newIndex,
                     currentVideo: videos[newIndex]

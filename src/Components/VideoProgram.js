@@ -9,19 +9,19 @@ export default class VideoProgram extends Component {
         super(props);
         this.state = {
             videoIndex: 0,
-            currentVideo: {}, 
+            currentVideo: {},
             running: false
         };
     }
-    
+
     componentDidMount() {
         if(this.checkData(videos)){
             // console.log('data found')
             this.start();
         };
-        if(ads.get()){
-            ads.runProgram();
-        };
+        // if(ads.get()){
+        //     ads.runProgram();
+        // };
     }
 
     checkData(data){
@@ -110,7 +110,7 @@ export default class VideoProgram extends Component {
             }, currentVideo.delay * 1000)
         }
     }
-  
+
     render() {
         const { currentVideo } = this.state;
             return (

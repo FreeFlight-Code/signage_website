@@ -23,7 +23,7 @@ class App extends Component {
       .then( res=>{
         if (res.data) {
           this.setState({
-            tv: res.data
+            tv: res.data[this.location.tvIndex]
           });
 
         }
@@ -37,7 +37,7 @@ class App extends Component {
     {
       return < Universal data={tv} />
     }
-    else 
+    else
     {
       return <div>  Undefined Route... format should be /tvData/[buildingName]/[tv number]  </div>
     }
